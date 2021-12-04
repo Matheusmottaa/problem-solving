@@ -4,6 +4,6 @@
 int main (){ 
 	int km; 
 	scanf("%d", &km); 
-	printf("%d minutos\n",(60*km)/ 30);
+	printf("%d minutos\n",2*km);
 	return 0; 
 }
