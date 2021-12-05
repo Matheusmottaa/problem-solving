@@ -26,7 +26,6 @@ int main() {
     return 0;
 }
 
-
 void otherSolution(){ 
 	int note, coins; 
 	double money;
