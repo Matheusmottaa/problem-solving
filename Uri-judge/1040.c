@@ -1,13 +1,14 @@
 #include <stdio.h> 
 
 int main(){ 
-	double A,B,C,D,average, exam; 
-	scanf("%lf%lf%lf%lf", &A, &B, &C, &D); 
-	average = ((A*2) + (B*3) + (C*4) + (D*1))/10.0; 
+	double n1,n2,n3,n4,average, exam; 
+	scanf("%lf%lf%lf%lf", &n1, &n2, &n3, &n4); 
+	average = (n1*2 + n2*3 + n3*4 + n4*1)/10.0; 
 	printf("Media: %.1lf\n", average); 
 	if(average >= 5.0 && average <= 6.9){ 
 		printf("Aluno em exame.\n");
 		scanf("%lf", &exam); 
+		printf("Nota do exame: %.1lf\n"); 
 		average = (average + exam) / 2.0; 
 		if(average > 5.0){
 			printf("Aluno aprovado.\n"); 
