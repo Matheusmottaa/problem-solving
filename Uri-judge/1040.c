@@ -8,7 +8,7 @@ int main(){
 	if(average >= 5.0 && average <= 6.9){ 
 		printf("Aluno em exame.\n");
 		scanf("%lf", &exam); 
-		printf("Nota do exame: %.1lf\n"); 
+		printf("Nota do exame: %.1lf\n", exam); 
 		average = (average + exam) / 2.0; 
 		if(average > 5.0){
 			printf("Aluno aprovado.\n"); 
