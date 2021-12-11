@@ -1,89 +1,79 @@
-#include <stdio.h>
+#include <stdio.h> 
 
-int sort(int A, int B, int C, int posA, int posB, int posC);
+int sort(int A, int B, int C, int posA, int posB, int posC); 
 
-int main()
-{
-	int A, B, C, posA, posB, posC;
-	scanf("%d%d%d", &A, &B, &C);
-	sort(A, B, C, posA, posB, posC);
-	printf("\n%d\n%d\n%d\n", A, B, C);
-	return 0;
+int main(){
+	int A,B,C, posA, posB, posC; 
+	scanf("%d%d%d", &A, &B, &C); 
+	sort(A,B,C,posA,posB,posC); 
+	printf("\n%d\n%d\n%d\n", A, B, C); 
+	return 0; 
 }
 
-int sort(int A, int B, int C, int posA, int posB, int posC)
-{
-	if (A < B)
-	{
-		if (A < C)
-		{
-			posA = 1;
-			if (B < C)
-			{
-				posB = 2;
-				posC = 3;
+
+int sort(int A, int B, int C, int posA, int posB, int posC){
+	if(A < B){ 
+		if(A < C){
+			posA = 1; 
+			if(B < C){
+				posB = 2; 
+				posC = 3; 
 			}
-			if (C < B)
-			{
-				posB = 3;
-				posC = 2;
+			if(C < B){ 
+				posB = 3; 
+				posC = 2; 
 			}
 		}
-
-		if (A > C)
-		{
-			posA = 2;
-			posB = 3;
-			posC = 1;
+		
+		if(A > C){ 
+			posA = 2; 
+			posB = 3; 
+			posC = 1; 
 		}
 	}
-
-	if (B < A)
-	{
-		if (B < C)
-		{
-			posB = 1;
-			if (A < C)
-			{
-				posA = 2;
-				posC = 3;
+		
+		if(B < A){
+			if(B < C){
+				posB = 1;
+				if(A < C){
+					posA = 2; 
+					posC = 3; 
+			    }
+			    
+			    if(C < A){
+				  posA = 3; 
+				  posC = 2; 
+				}
 			}
-
-			if (C < A)
-			{
-				posA = 3;
-				posC = 2;
+			
+			if(B > C){
+				posA = 3; 
+				posB = 2; 
+				posC = 1; 
 			}
 		}
-
-		if (B > C)
-		{
-			posA = 3;
-			posB = 2;
-			posC = 1;
-		}
-	}
-
-	if (posA == 1)
-		printf("%d\n", A);
-	if (posB == 1)
-		printf("%d\n", B);
-	if (posC == 1)
-		printf("%d\n", C);
-	if (posA == 2)
-		printf("%d\n", A);
-	if (posB == 2)
-		printf("%d\n", B);
-	if (posC == 2)
-		printf("%d\n", C);
-	if (posA == 3)
-		printf("%d\n", A);
-	if (posB == 3)
-		printf("%d\n", B);
-	if (posC == 3)
-		printf("%d\n", C);
-
-	return 0;
+		
+		if(posA == 1)
+			printf("%d\n", A); 
+		if(posB == 1)
+			printf("%d\n", B);
+		if(posC == 1)
+			printf("%d\n", C);
+		if(posA == 2)
+			printf("%d\n", A); 
+		if(posB == 2)
+			printf("%d\n", B);
+		if(posC == 2)
+			printf("%d\n", C);
+		if(posA == 3)
+			printf("%d\n", A); 
+		if(posB == 3)
+			printf("%d\n", B);
+		if(posC == 3)
+			printf("%d\n", C); 
+			
+	
+	return 0; 
 }
 
 // OTHER SOLUTION
