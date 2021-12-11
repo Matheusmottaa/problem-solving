@@ -14,7 +14,7 @@ int main(){
 	X = v[i]; 
 	v[i] = v[menor]; 
 	v[menor] = X; 
-  }
+    }
 	
 	A = v[0]; 
 	B = v[1]; 
