@@ -14,26 +14,27 @@ int main(){
 	X = v[i]; 
 	v[i] = v[menor]; 
 	v[menor] = X; 
-	}
+}
 	
 	A = v[0]; 
 	B = v[1]; 
 	C = v[2]; 
 	
 	if(A >= B + C){
-		printf("NAO FORMA TRIANGULO\n"); 
-		return 0; 		
+	  printf("NAO FORMA TRIANGULO\n"); 
+	  return 0; 		
 	}
+	
 	if(A*A == (B*B) + (C*C))
-		printf("TRIANGULO RETANGULO\n"); 
+	  printf("TRIANGULO RETANGULO\n"); 
 	if(A*A > (B*B)+(C*C))
-		printf("TRIANGULO OBTUSANGULO\n"); 
+	  printf("TRIANGULO OBTUSANGULO\n"); 
 	if(A*A < (B*B) + (C*C))
-		printf("TRIANGULO ACUTANGULO\n");
+	  printf("TRIANGULO ACUTANGULO\n");
 	if(A == B && B == C)
-		printf("TRIANGULO EQUILATERO\n");
+	  printf("TRIANGULO EQUILATERO\n");
 	if((A == B && B != C) || (A == C && A != B) || (B == C && C != A))
-		printf("TRIANGULO ISOSCELES\n");
+	  printf("TRIANGULO ISOSCELES\n");
 		
 	return 0; 
 }
