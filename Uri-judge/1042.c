@@ -3,13 +3,12 @@
 int sort(int A, int B, int C, int posA, int posB, int posC); 
 
 int main(){
-	int A,B,C, posA, posB, posC; 
-	scanf("%d%d%d", &A, &B, &C); 
-	sort(A,B,C,posA,posB,posC); 
-	printf("\n%d\n%d\n%d\n", A, B, C); 
-	return 0; 
+  int A,B,C, posA, posB, posC; 
+  scanf("%d%d%d", &A, &B, &C); 
+  sort(A,B,C,posA,posB,posC); 
+  printf("\n%d\n%d\n%d\n", A, B, C); 
+  return 0; 
 }
-
 
 int sort(int A, int B, int C, int posA, int posB, int posC){
   if(A < B){ 
