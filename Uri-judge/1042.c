@@ -67,7 +67,7 @@ int sort(int A, int B, int C, int posA, int posB, int posC){
   if(posC == 3)
 	printf("%d\n", C); 
 
-	return 0; 
+  return 0; 
 }
 
 // OTHER SOLUTION
