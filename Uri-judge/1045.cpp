@@ -8,10 +8,10 @@ int main()
   scanf("%lf%lf%lf", &v[0], &v[1], &v[2]);
 
   for (i = 0; i < 2; i++){
-	menor = i;
+    menor = i;
 	for (j = i + 1; j < 3; j++)
 	  if (v[menor] < v[j])
-		menor = j;
+	    menor = j;
 		X = v[i];
 		v[i] = v[menor];
 		v[menor] = X;
