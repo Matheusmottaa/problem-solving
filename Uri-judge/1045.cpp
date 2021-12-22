@@ -9,12 +9,12 @@ int main()
 
   for (i = 0; i < 2; i++){
     menor = i;
-	for (j = i + 1; j < 3; j++)
-	  if (v[menor] < v[j])
-	    menor = j;
-		X = v[i];
-		v[i] = v[menor];
-		v[menor] = X;
+   for (j = i + 1; j < 3; j++)
+	 if (v[menor] < v[j])
+	  menor = j;
+	  X = v[i];
+	  v[i] = v[menor];
+	  v[menor] = X;
   }
 
   A = v[0];
