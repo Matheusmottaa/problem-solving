@@ -1,4 +1,4 @@
-# Programming problem's solutions
+# Programming problems solutions
 
 Problems, algorithms and competitive programming. 
 
