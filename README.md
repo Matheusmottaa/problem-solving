@@ -1,5 +1,5 @@
 # Programming problems solutions
 
-Problems, algorithms and competitive programming. 
+Problems, algorithms and competitive programming.
 
-Only C and C++. 
+Only C and C++.
