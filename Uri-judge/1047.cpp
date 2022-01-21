@@ -1,26 +1,24 @@
-#include <stdio.h>
+#include <stdio.h> 
 
-int main()
-{
-  int beginH, beginM, endH, endM, h, m;
-  scanf("%d%d%d%d", &beginH, &beginM, &endH, &endM);
+int main(){ 
 
-  if (endH >= beginH)
-    h = endH - beginH;
+  int beginH, endH, beginM, endM, h, m; 
+  scanf("%d%d%d%d", &beginH, &beginM, &endH, &endM); 
+  
+  h = endH - beginH; 
   if (beginH > endH)
-    h = (endH - beginH) + 24;
+    h += 24; 
   if (h == 0)
-    h = 24;
-  if (endM >= beginM)
-    m = endM - beginM;
-  if (beginM > endM)
-  {
-    m = (endM - beginM) + 60;
-    h--;
+    h = 24; 
+  
+  m = endM - beginM; 
+  if(beginM > endM){ 
+    m += 60; 
+    h--; 
   }
 
-  printf("O JOGO DUROU %d HORA(S) E %d MINUTO(S)\n", h, m);
-  return 0;
+  printf("O JOGO DUROU %d HORA(S) E %d MINUTO(S)\n",h, m);
+  return 0; 
 }
 
 void otherSolution()
