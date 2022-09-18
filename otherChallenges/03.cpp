@@ -25,8 +25,7 @@ int main()
       aux = vector[i]; 
       vector[n-(i+1)] = aux; 
       vector[i] = temp; 
-      vector[n-(i+1)] = aux; 
-     }
+    }
   }  
   
   for(int i=0;i<n;i++)
