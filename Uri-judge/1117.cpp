@@ -4,35 +4,23 @@ using namespace std;
 
 int main()
 { 
-
-    float x,y, sum = 0.0f; 
-    int count = 0; 
-
-    cin >> x >> y;
-
-    while(1)
-    { 
-        if(x>=0 && x<=10)
-        { 
-            sum += x; 
-            count++; 
-        }
-        else 
+    float x,y; 
+    
+    do{ 
+        cin >> x; 
+        if(x<0||x>10)
             cout << "nota invalida\n"; 
-            
-        if(y>=0 && y<=10)
-        { 
-            sum += y; 
-            count++; 
-        }
-        else 
-           cout << "nota invalida\n"; 
+    }while(x<0||x>10); 
 
-        if(count==2) break; 
-        cin >> x >> y; 
-    }
+    do{ 
+        cin >> y; 
+        if(y<0||y>10)
+            cout << "nota invalida\n"; 
+    }while(y<0||y>10); 
+
     cout.setf(ios_base::fixed, ios_base::floatfield); 
     cout.precision(2); 
-    cout << "media = " << sum/2.0f << endl; 
+    cout << "media = " << (x+y)/2.0f << endl;
+
     return 0; 
 }
